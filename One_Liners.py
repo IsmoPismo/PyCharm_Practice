@@ -7,6 +7,13 @@ from functools import reduce
 
 
 def digits_to_num(digits):
-    return reduce(lambda x, y,: x *len(digits), reversed(digits))
+    return reduce(lambda x, y,: (x *10 + y), digits)
 
 print (digits_to_num([3,4,3,2,1]))
+
+def filter_words(w, l):
+    return filter(lambda x: x[0] == l, w)
+
+lista = ['hey','geyx','sexy','hamburger']
+print (list((filter_words(lista, 'h'))))
+
