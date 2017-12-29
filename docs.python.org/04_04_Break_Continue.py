@@ -19,3 +19,5 @@ for num in range(2, 10):
         print ("Found an even number", num)
         continue
     print ("Found a number", num)
+
+print("\nThe break statement, like in C, breaks out of the innermost enclosing FOR or WHILE loop.")
