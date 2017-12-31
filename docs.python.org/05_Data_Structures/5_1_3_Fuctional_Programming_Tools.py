@@ -13,6 +13,11 @@ def cube(x): return x**3
 map_list = map(cube, range(1,13))
 print(list(map_list))
 
-print('\nthe function must then have as many arguments as there are sequences')
+print('\nThe function must then have as many arguments as there are sequences')
+print(list(map(lambda x, y: x+y, range(5), range(5))))
 
 
+#Reduce
+print('\nReduce() built-in Function')
+from functools import reduce
+print(reduce(lambda x, y: x*10+y, range(10)))
