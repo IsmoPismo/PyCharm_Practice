@@ -31,9 +31,11 @@ print('''
         in the same order as in our original for loops.
     ''')
 
+#Practice
+
 vec = []
 for x in range(3):
     vec.append(x*3)
 print (vec)
+print ([x*3 for x in range(3)])
 
-print []
