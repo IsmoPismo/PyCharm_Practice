@@ -55,5 +55,5 @@ print(color_list[0] + ' ' + color_list[-1])
 
 
 #009
-exam_st_date = (11, 12, 2014)
-print('exam starts at ' )
+exam_st = (11, 12, 2014)
+print( "The examination will start from : %i / %i / %i"%exam_st)
