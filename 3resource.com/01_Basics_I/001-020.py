@@ -57,3 +57,16 @@ print(color_list[0] + ' ' + color_list[-1])
 #009
 exam_st = (11, 12, 2014)
 print( "The examination will start from : %i / %i / %i"%exam_st)
+
+
+#010
+'''
+n = int(input("\nEnter your input: "))
+n1 = int( "%s" % n)
+n2 = int( "%s%s" % (n, n))
+n3 = int( "%s%s%s" % (n, n, n))
+print(n1 + n2 + n3)
+'''
+
+#011
+print(abs.__doc__)
