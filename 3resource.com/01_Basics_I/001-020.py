@@ -89,3 +89,19 @@ heredoc string --------> example
 ''')
 
 #014
+'''
+from datetime import date
+date1 = input("Enter date in format YYYY-MM-DD ")
+year, month, day = map(int, date1.split('-'))
+date2 = input("Enter second date in same format (YYYY-MM-DD) ")
+year2, month2, day2 = map(int, date2.split('-'))
+d0 = date(year, month, day)
+d1 = date(year2, month2, day2)
+delta = d1 - d0
+print(delta.days)
+'''
+
+#015
+radius = 6
+volume = 3/4*3.14*radius**3
+print("Volume is {a}".format(a=volume))
