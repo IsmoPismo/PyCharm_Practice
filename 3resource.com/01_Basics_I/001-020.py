@@ -105,3 +105,89 @@ print(delta.days)
 radius = 6
 volume = 3/4*3.14*radius**3
 print("Volume is {a}".format(a=volume))
+
+
+#016
+'''
+seventeen = 17
+number = int(input("Enter your number "))
+if number > 17:
+    print(abs(17-number)*2)
+else:
+    print(17-number)
+'''
+
+#017
+'''
+number = int(input("Enter your number "))
+if abs(1000 - number) <= 100 or abs(2000 - number) <= 100:
+    print('Number is within range 900-1100 and 1900-2100')
+else:
+    print("Not in range")
+'''
+
+#018
+'''
+tre_num = input('Enter three number with a space between ')
+one, two, tre = map(int, tre_num.split())
+if one == two == tre:
+    print(one*3)
+else:
+    print(one+two+tre)
+'''
+
+#019
+'''
+stringy = input("Enter a string ")
+if stringy.startswith("Is"):
+    print(stringy)
+else:
+    print("Is " + stringy)
+'''
+
+#020
+def larger_string(str, n):
+   result = ""
+   for i in range(n):
+      result = result + str
+   return result
+
+print(larger_string('abc', 2))
+print(larger_string('.py', 3))
+
+#021
+'''
+e_o_o = int(input("Enter your number "))
+def even_o_odd(num):
+    if num % 2 == 0:
+        print("Number is even")
+    else:
+        print("Odd number")
+        
+even_o_odd(e_o_o)
+'''
+
+#022
+'''
+user_list = input("Enter your list with spaces between ")
+real_list = list(map(int, user_list.split()))
+print(real_list.count(4))
+'''
+
+#023
+def kihanje(string, num):
+    if len(string) > 2:
+        print(string[:2]*num+string[2:])
+    else:
+        print('too short')
+
+kihanje('Heyo',5)
+
+#024
+def vowel(a):
+    vows = ['a','e','o','i','u']
+    for i in vows:
+        if a != i:
+            print("it's not a vowel")
+
+vowel('b')
