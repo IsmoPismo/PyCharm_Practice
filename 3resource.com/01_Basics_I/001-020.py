@@ -70,3 +70,22 @@ print(n1 + n2 + n3)
 
 #011
 print(abs.__doc__)
+
+
+#012
+'''
+import calendar
+m = int(input("Enter month "))
+y = int(input("Enter year "))
+print(calendar.month(y, m))
+'''
+
+#013
+print('''
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example
+''')
+
+#014
