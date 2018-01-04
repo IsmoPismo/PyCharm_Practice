@@ -145,4 +145,30 @@ def adds_if_ints(x, y):
     if type(x) == int() and type(y) == int():
         return x + y
 
+def add_if_ints2 (x, y):
+    if not (isinstance(x, int) and isinstance(y, int)):
+        return ("Not an Int")
+    else:
+        return x +y
+
 print(adds_if_ints('a',5))
+print(add_if_ints2("2",1))
+
+#037
+def display(name, age, adress):
+    print("Name {}\nAge {}\nAdress {}".format(name, str(age), adress))
+
+display('Ismar',29,'Sedata Karica')
+
+#038
+x = 4
+y = 5
+z = (x+y)**2
+print(z)
+
+#039
+amount = 1000
+int = 3.5
+years = 7
+int_in_percent = 3.5/100
+future = (amount * int_in_percent) * years
