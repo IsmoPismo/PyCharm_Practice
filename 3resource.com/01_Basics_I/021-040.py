@@ -171,4 +171,12 @@ amount = 1000
 int = 3.5
 years = 7
 int_in_percent = 3.5/100
-future = (amount * int_in_percent) * years
+future = amount*((1+(0.01*int)) ** years)
+print(round(future, 2))
+
+#040
+p1 = 5,-5
+p2 = -1,7
+
+d =  ((p1[0] - p2[0])**2 + (p1[0] - p2[1])**2)**(1/2)
+print(d)
