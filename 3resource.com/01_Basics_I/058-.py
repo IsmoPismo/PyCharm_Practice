@@ -37,3 +37,15 @@ print("{} minutes is {} seconds".format(minutes, minutes*60))
 print("{} hours is {} seconds".format(hours, hours*60*60))
 print("{} days is {} seconds".format(day, day*60*60*24))
 print("{} minutes is {} seconds".format(weeks, weeks*60*60*24*7))
+
+#063
+def absolute_file_path(path_fname):
+        import os
+        return os.path.abspath('path_fname')
+print("Absolute file path: ",absolute_file_path("test.txt"))
+
+#064
+import os.path, time
+print("Last modified: %s" % time.ctime(os.path.getmtime("test.txt")))
+print("Created: %s" % time.ctime(os.path.getctime("test.txt")))
+
